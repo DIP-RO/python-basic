@@ -37,7 +37,7 @@ classname.staticmethod()
 #polymorphism
 class Vehicle:
     def __init__(self , model , brand , component):
-        self.model = model
+        self.model = model #instance variable and public
         self.brand = brand
         self.component = component
 class BMW(Vehicle):
@@ -46,5 +46,15 @@ class Rangerover(Vehicle):
     pass
 x = BMW("hybusa" , "bmw" , "chaaka")
 z = Rangerover("range" , "rover" , "baaka")
+
 print(x.brand)
 print(z.brand)
+
+#encapsulation
+class jauhar:
+    def __init__(self,boyname , girlname):
+        self.__boyname = boyname
+        self.__girlname = girlname
+        print(self.__boyname)
+c = jauhar("eshika" , "es")
+print(c.boyname)
